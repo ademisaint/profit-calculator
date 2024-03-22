@@ -1,13 +1,220 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App-header {
+  display: flex;
+  color: rgb(6, 6, 6);
+  padding-left: 50px;
+  background-color: #749f76;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.App {
+  font-size: 100px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  justify-content: center;
+  color: #4c574c;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100vh;
+}
+
+.section2 {
+  background-color: #749f76;
+}
+
+.navTab {
+  font-size: large;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tablist {
+  justify-content: center;
+  color: #fff;
+}
+
+.main-container {
+  margin: 10px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  /* height: 85vh; */
+}
+
+/* Style for input and select elements */
+input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+/* Style for labels */
+.label {
+  font-family: 'Arial', sans-serif, monospace;
+  color: #658a67;
+  font-size: small;
+  font-weight: 600;
+}
+
+/* Style for the results area */
+.result-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Arial', sans-serif, monospace;
+  margin-top: -3%;
+}
+
+.results {
+  width: 60%;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5)
+}
+
+.result {
+  display: flex;
+  justify-content: space-around;
+}
+
+    /* #10111F: #10111F;
+    15px: 15px; */
+
+/* .hr {
+    
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: relative;
+  margin-bottom: 0em;
+  padding: 2em 0;
+
+  &:after,
+  &:before {
+
+      content: "";
+      position: absolute;
+
+      width: 100%;
+      height: 1px;
+      bottom: 50%;
+      left: 0;
+
+  }
+
+  &:before {
+
+      background: linear-gradient( 90deg, #10111F 0%, #10111F 50%, transparent 50%, transparent 100% );
+      background-size: 15px;
+      background-position: center;
+      z-index: 1;
+
+  }
+
+  &:after {
+
+      transition: opacity 0.3s ease, animation 0.3s ease;
+
+      background: linear-gradient(
+          to right, 
+          #62efab 5%, 
+          #F2EA7D 15%, 
+          #F2EA7D 25%, 
+          #FF8797 35%, 
+          #FF8797 45%, 
+          #e1a4f4 55%, 
+          #e1a4f4 65%, 
+          #82fff4 75%, 
+          #82fff4 85%, 
+          #62efab 95%);
+
+      background-size: 200%;
+      background-position: 0%;
+      animation: bar 15s linear infinite;
+
+  }
+
+  @keyframes bar {
+
+      0% { background-position: 0%; }
+      100% { background-position: 200%; }
+
+  }
+  
+} */
+
+.result-ite {
+  padding-bottom: 20px;
+}
+
+/* Style for individual result items */
+.result-item {
+  display: inline-block;
+  /* margin-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  
+}
+
+.word1 {
+  font-family: 'Arial', sans-serif, monospace;
+  color: #658a67;
+  font-size: small;
+  font-weight: 500;
+}
+
+/* Larger text for price estimations */
+.price-estimate {
+  font-size: 2em;
+  color: #4CAF50;
+}
+
+.btn {
+  padding: 50px 50px ;
+  display: flex;
+  justify-content: center;
+}
+
+/* Button styling */
+.button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: medium;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background-color: #45a049;
 }
