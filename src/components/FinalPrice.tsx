@@ -1,4 +1,5 @@
 import React from 'react'
+import Result from './Result';
 
 const FinalPrice = () => {
     const [values, setValues] = React.useState({
@@ -18,6 +19,7 @@ const FinalPrice = () => {
     }
 
     const [showResult, setShowResult] = React.useState(false)
+    const [resultType, setResultType] = React.useState('');
 
     const [result, setResult] = React.useState({
         baseSellingPrice: '',
@@ -43,6 +45,7 @@ const FinalPrice = () => {
             });
 
             setShowResult(true);
+            setResultType('finalPrice');
         }  else {
             console.error('Invalid input values. Please enter valid numbers.');
             setShowResult(false);
@@ -73,7 +76,7 @@ const FinalPrice = () => {
                 <button onClick={handleCalculateClick} className='button'>CALCULATE FINAL PRICE</button>
             </div>
 
-            {/* {showResult && <Result data={result} />} */}
+            {showResult && <Result data={result} resultType={resultType} />}
             
         </div>
     )

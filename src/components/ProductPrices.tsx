@@ -11,6 +11,7 @@ const ProductPrices = () => {
   });
 
   const [showResult, setShowResult] = React.useState(false);
+  const [resultType, setResultType] = React.useState('');
 
   const [result, setResult] = React.useState({
     productName: '',
@@ -49,6 +50,7 @@ const ProductPrices = () => {
       });
 
       setShowResult(true);
+      setResultType('profit');
     } else {
       console.error('Invalid input values. Please enter valid numbers.');
       setShowResult(false);
@@ -86,7 +88,7 @@ const ProductPrices = () => {
         <button onClick={handleCalculateClick} className='button'>CALCULATE PROFIT</button>
       </div>
 
-      {showResult && <Result data={result} />}
+      {showResult && <Result data={result} resultType={resultType} />}
 
 
     </div>
