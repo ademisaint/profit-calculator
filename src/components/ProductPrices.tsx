@@ -5,9 +5,9 @@ const ProductPrices = () => {
 
   const [values, setValues] = React.useState({
     name: "",
-    costPrice: 1000,
-    totalUnits: 2,
-    profitMargin: 20,
+    costPrice: "",
+    totalUnits: "",
+    profitMargin: "",
   });
 
   const [showResult, setShowResult] = React.useState(false);
@@ -32,9 +32,9 @@ const ProductPrices = () => {
   }
 
   const handleCalculateClick = () => {
-    const cost = (values.costPrice);
-    const units = (values.totalUnits);
-    const margin = (values.profitMargin);
+    const cost = parseFloat(values.costPrice);
+    const units = parseInt(values.totalUnits);
+    const margin = parseFloat(values.profitMargin);
 
     if (!isNaN(cost) && !isNaN(units) && !isNaN(margin) && units > 0 && margin > 0) {
       const profitPerUnit = (margin / 100) * (cost / units);
@@ -61,8 +61,8 @@ const ProductPrices = () => {
 
   return (
     <div className='main-container'>
-      <div>
-        <h1>calculate your commodities profit</h1>
+      <div className='form-head'>
+        <h2>calculate your commodities profit</h2>
       </div>
 
       <div>

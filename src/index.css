@@ -9,7 +9,7 @@ body {
   display: flex;
   color: rgb(6, 6, 6);
   padding-left: 50px;
-  background-color: #749f76;
+  font-family: 'Monaco', monospace;
 }
 
 img {
@@ -18,26 +18,60 @@ img {
 }
 
 .App {
-  font-size: 100px;
+  font-family: 'Verdana', sans-serif;
   margin-bottom: 20px;
   padding-left: 50px;
+  padding-right: 50px;
+  display: inline-block;
   justify-content: center;
+  align-items: center;
   color: #4c574c;
+  width: 50%;
+}
+
+.App-h1 {
+  color: #000000;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.App-btn {
+  color: #6f21ae;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  font-size: 20px;
+  font-family: 'Monaco', monospace;
+}
+
+.App-p {
+  font-family: 'Monaco', monospace;
+  font-size: 17px;
+}
+
+.App-image {
+  width: 50%;
+  /* background-image: url(/src/images/side2-bg.jpg); */
+  height: 100%;
+  padding: 5px;
 }
 
 .intro {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 5%;
 }
 
 .bg {
   background-repeat: no-repeat;
-  height: 60vh;
-  width: 100vh;
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
 }
 
-.section2 {
+#section2 {
   background-color: #749f76;
 }
 
@@ -52,6 +86,7 @@ img {
 .tablist {
   justify-content: center;
   color: #fff;
+  font-family: 'Monaco', monospace;
 }
 
 .main-container {
@@ -61,6 +96,11 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   /* height: 85vh; */
+}
+
+.form-head {
+  font-family: 'Monaco', monospace;
+  padding-bottom: 20px;
 }
 
 /* Style for input and select elements */
@@ -74,17 +114,19 @@ input {
 
 /* Style for labels */
 .label {
-  font-family: 'Arial', sans-serif, monospace;
+  /* font-family: 'Arial', sans-serif, monospace; */
+  font-family: 'Lucida Console', monospace;
   color: #658a67;
-  font-size: small;
+  font-size: medium;
   font-weight: 600;
+  padding-left: 10px;
 }
 
 /* Style for the results area */
 .result-container {
   display: flex;
   justify-content: center;
-  font-family: 'Arial', sans-serif, monospace;
+  font-family: 'Monaco', monospace;
   margin-top: -3%;
 }
 
@@ -202,6 +244,7 @@ input {
 
 /* Button styling */
 .button {
+  font-family: 'Monaco', monospace;
   background-color: #4CAF50;
   color: white;
   font-size: medium;
@@ -217,4 +260,58 @@ input {
 /* Hover effect for buttons */
 .button:hover {
   background-color: #45a049;
+}
+
+.site-footer {
+  background-color: #ffffff;
+  color: rgb(85, 85, 85);
+  padding: 20px 0;
+  font-family: 'Monaco', monospace;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.footer-social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li,
+.social-link {
+  margin-bottom: 10px;
+}
+
+.footer-links li a,
+.social-link {
+  color: #9c9b9b;
+  text-decoration: none;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  .footer-row {
+    flex-direction: column;
+  }
 }

@@ -3,9 +3,9 @@ import Result from './Result';
 
 const FinalPrice = () => {
     const [values, setValues] = React.useState({
-        baseSellingPrice: 10,
-        taxRate: 2,
-        shippingFee: 5000,
+        baseSellingPrice: "",
+        taxRate: "",
+        shippingFee: "",
     });
 
     const handleChange = (event: any) => {
@@ -29,9 +29,9 @@ const FinalPrice = () => {
     })
 
     const handleCalculateClick = () => {
-        const basePrice = (values.baseSellingPrice);
-        const taxRate = (values.taxRate);
-        const shippingFee = (values.shippingFee);
+        const basePrice = parseFloat(values.baseSellingPrice);
+        const taxRate = parseInt(values.taxRate);
+        const shippingFee = parseFloat(values.shippingFee);
     
         if (!isNaN(basePrice) && !isNaN(taxRate) && !isNaN(shippingFee) && basePrice >= 0 && taxRate >= 0 && shippingFee >= 0) {
             const taxAmount = (basePrice * (taxRate / 100));
@@ -56,7 +56,10 @@ const FinalPrice = () => {
 
     return (
         <div className='main-container'>
-            <h1>Final Price</h1>
+            <div className='form-head'>
+                <h1>Final Price</h1>
+            </div>
+            
             <div>
                 <div className='form'>
                     <p className='label'>Base Selling Price</p>
