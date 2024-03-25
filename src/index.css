@@ -6,11 +6,37 @@ body {
 }
 
 .App-header {
+  width: 100%;
   display: flex;
   color: rgb(6, 6, 6);
-  padding-left: 50px;
+  padding-right: 2%;
+  padding-left: 2%;
   font-family: 'Monaco', monospace;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
 }
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.social-area {
+  display: flex;
+  padding-right: 5%;
+  align-items: center;
+}
+
+.socials {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+
 
 img {
   width: 50px;
@@ -34,13 +60,15 @@ img {
   font-size: 80px;
   font-weight: 700;
   line-height: 70px;
+  height: 250px;
 }
 
 .App-btn {
-  color: #6f21ae;
-  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
   cursor: pointer;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   font-size: 20px;
   font-family: 'Monaco', monospace;
 }
@@ -71,8 +99,12 @@ img {
   object-fit: cover;
 }
 
+.section-2 {
+  background-color: #324ea8;
+}
+
 #section2 {
-  background-color: #749f76;
+  margin-top: 400px;
 }
 
 .navTab {
@@ -116,7 +148,7 @@ input {
 .label {
   /* font-family: 'Arial', sans-serif, monospace; */
   font-family: 'Lucida Console', monospace;
-  color: #658a67;
+  color: #324ea8;
   font-size: medium;
   font-weight: 600;
   padding-left: 10px;
@@ -233,7 +265,7 @@ input {
 /* Larger text for price estimations */
 .price-estimate {
   font-size: 2em;
-  color: #4CAF50;
+  color: #324ea8;
 }
 
 .btn {
@@ -245,7 +277,7 @@ input {
 /* Button styling */
 .button {
   font-family: 'Monaco', monospace;
-  background-color: #4CAF50;
+  background-color: #324ea8;
   color: white;
   font-size: medium;
   border: none;
@@ -259,7 +291,12 @@ input {
 
 /* Hover effect for buttons */
 .button:hover {
-  background-color: #45a049;
+  background-color: #5970bd;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 100px;
 }
 
 .site-footer {
