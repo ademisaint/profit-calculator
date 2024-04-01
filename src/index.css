@@ -44,7 +44,7 @@ img {
 }
 
 .App {
-  font-family: 'Verdana', sans-serif;
+  /* font-family: 'Verdana', sans-serif;
   margin-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
@@ -52,14 +52,23 @@ img {
   justify-content: center;
   align-items: center;
   color: #4c574c;
+  width: 50%; */
+
   width: 50%;
+  font-family: 'Verdana', sans-serif;
 }
 
 .App-h1 {
-  color: #000000;
-  font-size: 80px;
+  /* color: #000000;
+  font-size: 75px;
   font-weight: 700;
   line-height: 70px;
+   */
+
+  color: #000000;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
   height: 250px;
 }
 
@@ -79,31 +88,45 @@ img {
 }
 
 .App-image {
-  width: 50%;
-  /* background-image: url(/src/images/side2-bg.jpg); */
+  /* width: 50%;
   height: 100%;
-  padding: 5px;
+  padding: 5px; */
+
+  width: 50%;
 }
 
 .intro {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5%;
+  padding: 5%; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .bg {
-  background-repeat: no-repeat;
-  height: 90%;
+  /* background-repeat: no-repeat; */
+  /* height: 90%;
   width: 90%;
-  object-fit: cover;
+  object-fit: cover; */
+
+  width: 100%;
+  height: auto;
 }
 
 .section-2 {
-  background-color: #324ea8;
   display: flex;
   justify-content: center;
-  height: 90vh;
+  height: auto;
+  background-image:  url('./images/background 3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 #section2 {
@@ -123,8 +146,35 @@ img {
 
 .tablist {
   justify-content: center;
-  color: #fff;
+  color: #f5ce1f;
   font-family: 'Monaco', monospace;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 91%;
+  height: auto;
+  border-radius: 15px;
+  background-image: 
+  /* linear-gradient(
+    to bottom right,
+    rgba(255, 164, 59, 57%), rgb(255, 251, 148, 67%)
+    /* var(--tabs-bg-one),
+    var(--tabs-bg-two) )*/
+    rgba(255, 255, 255, 0.2);
+  box-shadow: -1.5px -1.5px 2px -2px var(--white),
+    5px 5px 30px rgb(0, 0, 0, 0.2);
+  border: 0.5px solid;
+  border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent
+    rgba(255, 255, 255, 0.3);
+  padding: 2%;
+  margin: 2%;
+}
+
+.react-tabs__tab--selected {
+  /* background-color: ; */
+  border-color: 0;
+  border-radius: 0%;
 }
 
 .main-container {
@@ -144,7 +194,15 @@ img {
 .form-head {
   font-family: 'Monaco', monospace;
   padding-bottom: 20px;
-  color: #c7c3de;
+  color: #FFD700;
+
+  /* font-family: 'Monaco', monospace;
+  padding-bottom: 20px;
+  background: linear-gradient( #FF7F50, #D3D3D3 );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;  */
 }
 
 /* Style for input and select elements */
@@ -156,17 +214,19 @@ input {
   width: 100%;
   box-sizing: border-box;
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px rgb(104, 104, 104);
   margin-right: 10px;
   background-color: unset;
-  color: #fff;
+  color: #F5F5DC;
+  font-family: 'Lucida Console', monospace;
 }
 
 /* Style for labels */
 .label {
   /* font-family: 'Arial', sans-serif, monospace; */
   font-family: 'Lucida Console', monospace;
-  color: #ffffff;
+  color: #FFD700;
   font-size: medium;
   font-weight: 600;
   padding-left: 10px;
@@ -178,15 +238,17 @@ input {
   justify-content: center;
   font-family: 'Monaco', monospace;
   margin-top: -3%;
+  
 }
 
 .results {
-  width: 60%;
-  background-color: #fff;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 10px;
   text-align: center;
   justify-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5)
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
 .result {
@@ -208,29 +270,33 @@ input {
 }
 
 .word1 {
-  font-family: 'Arial', sans-serif, monospace;
-  color: #658a67;
+  font-family: 'Monaco', monospace;
+  color: #FFD700;
   font-size: small;
   font-weight: 500;
+}
+
+.subject {
+  color: #F5F5DC;
 }
 
 /* Larger text for price estimations */
 .price-estimate {
   font-size: 2em;
-  color: #324ea8;
+  color: #FFD700;
 }
 
 .btn {
-  padding: 10px 10px ;
+  padding: 30px 10px ;
   display: flex;
   justify-content: center;
 }
 
 /* Button styling */
 .button {
-  font-family: 'Monaco', monospace;
-  background-color: #324ea8;
-  color: white;
+  font-family: 'Lucida Console', monospace;
+  background: linear-gradient(to bottom right, #ae8625, #f7ef8a, #d2ac47);
+  color: #F5F5DC;
   font-size: medium;
   border: none;
   border-radius: 50px;
@@ -239,11 +305,14 @@ input {
   width: 50%;
   display: flex;
   justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 /* Hover effect for buttons */
 .button:hover {
-  background-color: #5970bd;
+  background-color: #5c78d3;
+/* 
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #999999; */
 }
 
 .footer {
@@ -299,8 +368,193 @@ input {
   font-size: 0.8em;
 }
 
+@media (max-width: 1200px) {
+  .App-h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    height: 100vh; 
+    align-items: center;
+    margin-top: 100px;
+    display: block;
+    justify-content: center;
+  }
+
+  .App {
+    width: 100%;
+  }
+
+  .App-h1{
+    width: 70%;
+  }
+
+  .App-image{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 70px;
+  }
+
+  #section2 {
+    margin-top: 700px;
+  }
+
+  .section-2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .navTab{
+    padding: 0%;
+    width: 70%;
+    /* height: 80%; */
+  }
+
+  .main-container{
+    /* width: 100%; */
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: stretch;
+    
+  }
+
+  .App{
+    width: 100%;
+    padding: 20px 0px;
+    margin: 20px 0px;
+  }
+
+  .App-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bg {
+    /* background-repeat: no-repeat; */
+    /* height: 90%;
+    width: 90%;
+    object-fit: cover; */
+  
+    width: 85%;
+    height: auto;
+  }
+
+  .parallax-layer {
+    transform: translateY(50px); /* Adjust the offset as needed */
+  }
+
+  .App-h1 {
+    font-size: 32px;
+    height: 90px;
+  }
+
+  #section2{
+    margin-top: 470px;
+  }
+
+  .section-2 {
+    height: auto;
+  }
+
+  .navTab{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-head h2 {
+    font-size: 20px;
+  }
+
+  .input-field {
+    width: calc(100% - 20px); 
+  }
+}
+
 @media (max-width: 600px) {
   .footer-row {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro{
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .App-h1 {
+    font-size: 24px;
+  }
+
+  .App-p {
+    font-size: 16px;
+  }
+
+  .App-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+
+  .bg {
+    width: 100%;
+    height: auto;
+  }
+
+  #section2{
+    margin-top: 470px;
+  }
+
+  .navTab {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tablist {
+    width: 50%;
+    font-size: small;
+    display: flex;
+  }
+  
+
+  .main-container {
+    width: 85%;
+  }
+
+  .form-head h2 {
+    font-size: 18px;
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+
+  .button {
+    padding: 8px 16px;
   }
 }

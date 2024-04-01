@@ -10,20 +10,20 @@ const Result = ({ data, resultType}: any) => {
                     <div>
                         <div className="result-ite">
                             <div className="price-estimate">{data.totalProfit}</div>
-                            <div>TOTAL PROFIT</div>
+                            <div className='subject'>TOTAL PROFIT</div>
                         </div>
                         <b className="hr"></b>
                         <div className='result'>
                             <div className="result-item">
-                                <div>{data.costPrice}</div>
+                                <div className='subject'>{data.costPrice}</div>
                                 <div className='word1'>Cost Price</div>
                             </div>
                             <div className="result-item">
-                                <div>{data.sellingPricePerUnit}</div>
+                                <div className='subject'>{data.sellingPricePerUnit}</div>
                                 <div className='word1'>Selling Price per Unit</div>
                             </div>
                             <div className="result-item">
-                                <div>{data.profitPerUnit}</div>
+                                <div className='subject'>{data.profitPerUnit}</div>
                                 <div className='word1'>Profit per unit</div>
                             </div>
                         </div>
