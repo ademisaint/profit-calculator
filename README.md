@@ -1,4 +1,4 @@
-# [Profit Calc] (https://660e3fff009af8a4f480cd24--fascinating-youtiao-b7ff19.netlify.app/)
+# [Profit Calc](https://660e3fff009af8a4f480cd24--fascinating-youtiao-b7ff19.netlify.app/)
 
 ## Short Description
 
