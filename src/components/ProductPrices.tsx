@@ -71,15 +71,15 @@ const ProductPrices = () => {
           <input type="text" name='name' onChange={handleChange} value={values.name} />
         </div>
         <div className='form'>
-          <p className='label'>COST PRICE</p>
+          <p className='label'>COST PRICE (&#8358;)</p>
           <input type="text" name='costPrice' onChange={handleChange} value={values.costPrice} />
         </div>
         <div className='form'>
-          <p className='label'>TOTAL UNITS</p>
+          <p className='label'>TOTAL UNITS (&#8358;)</p>
           <input type="text" name='totalUnits' onChange={handleChange} value={values.totalUnits} />
         </div>
         <div className='form'>
-          <p className='label'>PROFIT MARGIN</p>
+          <p className='label'>PROFIT MARGIN (%)</p>
           <input type="text" name='profitMargin' onChange={handleChange} value={values.profitMargin} />
         </div>
       </div>

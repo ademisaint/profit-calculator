@@ -62,7 +62,7 @@ const FinalPrice = () => {
             
             <div>
                 <div className='form'>
-                    <p className='label'>Base Selling Price</p>
+                    <p className='label'>Base Selling Price (&#8358;)</p>
                     <input type="text" name='baseSellingPrice' onChange={handleChange} value={values.baseSellingPrice} />
                 </div>
                 <div className='form'>
@@ -70,7 +70,7 @@ const FinalPrice = () => {
                     <input type="text" name='taxRate' onChange={handleChange} value={values.taxRate} />
                 </div>
                 <div className='form'>
-                    <p className='label'>Shipping Fee</p>
+                    <p className='label'>Shipping Fee (&#8358;)</p>
                     <input type="text" name='shippingFee' onChange={handleChange} value={values.shippingFee} />
                 </div>
             </div>

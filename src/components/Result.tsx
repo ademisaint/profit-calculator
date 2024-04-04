@@ -9,21 +9,21 @@ const Result = ({ data, resultType}: any) => {
                 {resultType === 'profit' && (
                     <div>
                         <div className="result-ite">
-                            <div className="price-estimate">{data.totalProfit}</div>
                             <div className='subject'>TOTAL PROFIT</div>
+                            <div className="price-estimate"> &#8358;{data.totalProfit}</div>
                         </div>
-                        <b className="hr"></b>
+                        <hr style={{ height: '2px', borderWidth: '0', color: 'white', backgroundColor: '#F5F5DC', margin: '7px 40px'}} />
                         <div className='result'>
                             <div className="result-item">
-                                <div className='subject'>{data.costPrice}</div>
+                                <div className='subject'> &#8358;{data.costPrice}</div>
                                 <div className='word1'>Cost Price</div>
                             </div>
                             <div className="result-item">
-                                <div className='subject'>{data.sellingPricePerUnit}</div>
+                                <div className='subject'> &#8358;{data.sellingPricePerUnit}</div>
                                 <div className='word1'>Selling Price per Unit</div>
                             </div>
-                            <div className="result-item">
-                                <div className='subject'>{data.profitPerUnit}</div>
+                            <div className="result-items">
+                                <div className='subject'> &#8358;{data.profitPerUnit}</div>
                                 <div className='word1'>Profit per unit</div>
                             </div>
                         </div>
@@ -33,21 +33,21 @@ const Result = ({ data, resultType}: any) => {
                 {resultType === 'finalPrice' && (
                     <div>
                         <div className="result-ite">
-                            <div className="price-estimate">{data.finalPrice}</div>
-                            <div>FINAL PRICE</div>
+                            <div className='subject'>FINAL PRICE</div>
+                            <div className="price-estimate"> &#8358;{data.finalPrice}</div>
                         </div>
-                        <b className="hr"></b>
+                        <hr style={{ height: '2px', borderWidth: '0', color: 'white', backgroundColor: '#F5F5DC', margin: '7px 40px'}} />
                         <div className='result'>
                             <div className="result-item">
-                                <div>{data.baseSellingPrice}</div>
+                                <div className='subject'> &#8358;{data.baseSellingPrice}</div>
                                 <div className='word1'>BASE SELLING PRICE</div>
                             </div>
                             <div className="result-item">
-                                <div>{data.taxAmount}</div>
+                                <div className='subject'> &#8358;{data.taxAmount}</div>
                                 <div className='word1'>TAX RATE</div>
                             </div>
-                            <div className="result-item">
-                                <div>{data.shippingCost}</div>
+                            <div className="result-items">
+                                <div className='subject'> &#8358;{data.shippingCost}</div>
                                 <div className='word1'>SHIPPING FEE</div>
                             </div>
                         </div>

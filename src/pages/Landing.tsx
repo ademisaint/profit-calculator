@@ -11,6 +11,7 @@ import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 
 
 const Landing = () => {
+  // eslint-disable-next-line
   const [tabs, setTabs] = React.useState([
     {
       id: 1,
@@ -21,17 +22,6 @@ const Landing = () => {
       name: 'Final Price',
     }
   ])
-
-  const scrollToDiv = () => {
-    // const targetDiv = document.getElementById('section2');
-    // if (targetDiv) {
-    //   targetDiv.scrollIntoView({ behavior: 'smooth' });
-    // }
-
-    parallax.current.scrollTo(0.4);
-
-    console.log('hello')
-  };
 
   const handleTabClick = () => {
     console.log('hello')
@@ -94,7 +84,7 @@ const Landing = () => {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.5} factor={0.5} onClick={() => parallax.current.scrollTo(0)}>
+        <ParallaxLayer offset={1} speed={0.5} factor={0.5} >
           <div className='footer'><Footer/></div>
         </ParallaxLayer>
       </Parallax>

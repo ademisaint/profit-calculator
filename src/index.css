@@ -121,7 +121,7 @@ img {
   display: flex;
   justify-content: center;
   height: auto;
-  background-image:  url('./images/background 3.jpg');
+  background-image:  url('./images/francesco-ungaro-jqKS0ET-wGE-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -146,7 +146,7 @@ img {
 
 .tablist {
   justify-content: center;
-  color: #f5ce1f;
+  color: #F5F5DC;
   font-family: 'Monaco', monospace;
   position: relative;
   display: flex;
@@ -194,7 +194,7 @@ img {
 .form-head {
   font-family: 'Monaco', monospace;
   padding-bottom: 20px;
-  color: #FFD700;
+  color: #F5F5DC;
 
   /* font-family: 'Monaco', monospace;
   padding-bottom: 20px;
@@ -208,14 +208,16 @@ img {
 /* Style for input and select elements */
 input {
   border: none;
-  /* border-bottom: 2px solid #ffffff; */
-  border-radius: 8px;
+  border-bottom: 2px solid #ffffff;
+  appearance: none;
+  outline: none;
+  border-radius: 2px;
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px rgb(104, 104, 104);
+  /* box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px rgb(104, 104, 104); */
   margin-right: 10px;
   background-color: unset;
   color: #F5F5DC;
@@ -226,7 +228,7 @@ input {
 .label {
   /* font-family: 'Arial', sans-serif, monospace; */
   font-family: 'Lucida Console', monospace;
-  color: #FFD700;
+  color: #F5F5DC;
   font-size: medium;
   font-weight: 600;
   padding-left: 10px;
@@ -254,36 +256,45 @@ input {
 .result {
   display: flex;
   justify-content: space-around;
+  padding-top: 10px;
 }
 
 .result-ite {
-  padding-bottom: 20px;
+  padding-bottom: 3px;
 }
 
 /* Style for individual result items */
 .result-item {
   display: inline-block;
   /* margin-right: 20px;
-  padding-left: 40px;
-  padding-right: 40px; */
-  
+  padding-left: 40px; */
+  padding-right: 8px; 
+  border-right:  2px solid #F5F5DC;
+}
+
+.result-items {
+  display: inline-block;
+  /* margin-right: 20px;
+  padding-left: 40px; */
+  /* padding-right: 8px;  */
+  /* border-right:  2px solid #F5F5DC; */
 }
 
 .word1 {
   font-family: 'Monaco', monospace;
-  color: #FFD700;
+  color: #F5F5DC;
   font-size: small;
   font-weight: 500;
 }
 
 .subject {
-  color: #F5F5DC;
+  color: #c7c7c1;
 }
 
 /* Larger text for price estimations */
 .price-estimate {
   font-size: 2em;
-  color: #FFD700;
+  color: #F5F5DC;
 }
 
 .btn {
@@ -295,24 +306,25 @@ input {
 /* Button styling */
 .button {
   font-family: 'Lucida Console', monospace;
-  background: linear-gradient(to bottom right, #ae8625, #f7ef8a, #d2ac47);
-  color: #F5F5DC;
+  background: #fff;
+  color: #000;
   font-size: medium;
   border: none;
   border-radius: 50px;
+  outline: none;
   padding: 10px 20px;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  /* transition: background-color 0.2s ease; */
 }
 
 /* Hover effect for buttons */
 .button:hover {
-  background-color: #5c78d3;
-/* 
-  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #999999; */
+  background-color: #F5F5DC;
+  color: #40403d;
 }
 
 .footer {
@@ -489,6 +501,10 @@ input {
   .input-field {
     width: calc(100% - 20px); 
   }
+
+  .button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -501,14 +517,17 @@ input {
   .intro{
     height: 100%;
     justify-content: space-around;
+    margin-top: 10px;
   }
 
   .App-h1 {
-    font-size: 24px;
+    font-size: 30px;
+    height: 120px;
+    margin-bottom: 30px;
   }
 
   .App-p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .App-image {
@@ -536,7 +555,7 @@ input {
   }
   
   .tablist {
-    width: 50%;
+    width: 95%;
     font-size: small;
     display: flex;
   }
@@ -556,5 +575,9 @@ input {
 
   .button {
     padding: 8px 16px;
+  }
+
+  .results {
+    width: 100%;
   }
 }
