@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Profit Calc
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Short Description
 
-## Available Scripts
+Profit Calc is a dynamic web application designed to revolutionize the way businesses calculate selling prices, profit margins, tax implications, and shipping costs. With a focus on providing real-time financial insights, Profit Calc enables users to make informed and precise pricing decisions quickly and efficiently.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+* HTML5: For structuring the web application's content.
+* CSS3: For styling, ensuring a responsive and visually appealing interface.
+* JavaScript (ES6): For dynamic content interaction and real-time calculation functionalities.
+* React: Utilized for building the user interface components, enhancing the application's interactivity and state management.
+* Node.js: As the runtime environment for executing JavaScript code server-side, facilitating back-end functions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Preview
+Profit Calc is intuitive and user-friendly, designed to cater to businesses of all sizes. Users can easily input their cost, desired profit margin, tax rates, and shipping costs. The application instantly calculates and displays the necessary selling price, adjusted profit margins, total tax implications, and final price including shipping, all in a sleek dashboard.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Key Features:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Real-time calculation of selling prices and profit margins.
+* Detailed breakdown of tax implications and final prices, including shipping.
+* Interactive and responsive design for optimal user experience across devices.
+* Enjoy streamlined pricing strategy development and enhance your business's financial decision-making process with Profit Calc.
