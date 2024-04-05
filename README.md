@@ -14,6 +14,10 @@ Profit Calc is a dynamic web application designed to revolutionize the way busin
 
 ## Preview
 Profit Calc is intuitive and user-friendly, designed to cater to businesses of all sizes. Users can easily input their cost, desired profit margin, tax rates, and shipping costs. The application instantly calculates and displays the necessary selling price, adjusted profit margins, total tax implications, and final price including shipping, all in a sleek dashboard.
+* ![hero-section](/src/images/Screenshot 2024-04-05 103335.png)
+* ![body](/src/images/Screenshot%202024-04-05%20103400.png)
+* ![calculated-profit](/src/images/Screenshot%202024-04-05%20103450.png)
+* ![final price](/src/images/Screenshot%202024-04-05%20103538.png)
 
 ## Key Features:
 

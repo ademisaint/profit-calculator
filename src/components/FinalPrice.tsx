@@ -66,7 +66,7 @@ const FinalPrice = () => {
                     <input type="text" name='baseSellingPrice' onChange={handleChange} value={values.baseSellingPrice} />
                 </div>
                 <div className='form'>
-                    <p className='label'>Tax Rate</p>
+                    <p className='label'>Tax Rate (&#x0025;)</p>
                     <input type="text" name='taxRate' onChange={handleChange} value={values.taxRate} />
                 </div>
                 <div className='form'>
