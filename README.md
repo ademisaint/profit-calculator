@@ -19,13 +19,13 @@ Profit Calc is intuitive and user-friendly, designed to cater to businesses of a
 * ![hero-section](/src/images/Screenshot%202024-04-05%20103335.png)
 * ![body](/src/images/Screenshot%202024-04-05%20103400.png)
 * ![calculated-profit](/src/images/Screenshot%202024-04-05%20103450.png)
-* ![final price](/src/images/Screenshot%202024-04-05%20103538.png)
+* ![final-price](/src/images/Screenshot%202024-04-05%20103538.png)
 
 ### Mobile View
-* ![](image.png)
-* ![](image.png)
-* ![](image.png)
-* ![](image.png)
+* ![hero-section](/src/images/WhatsApp%20Image%202024-04-05%20at%2011.38.40%20AM%20(1).jpeg)
+* ![body](/src/images/WhatsApp%20Image%202024-04-05%20at%2011.38.40%20AM.jpeg)
+* ![final-price](/src/images/WhatsApp%20Image%202024-04-05%20at%2011.38.38%20AM.jpeg)
+* ![calculated-profit](/src/images/WhatsApp%20Image%202024-04-05%20at%2011.38.39%20AM.jpeg)
 
 ## Key Features:
 
