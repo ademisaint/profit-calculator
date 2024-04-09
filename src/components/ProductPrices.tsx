@@ -71,11 +71,11 @@ const ProductPrices = () => {
           <input type="text" name='name' onChange={handleChange} value={values.name} />
         </div>
         <div className='form'>
-          <p className='label'>COST PRICE (&#x20A6;)</p>
+          <p className='label'>COST PRICE (₦)</p>
           <input type="text" name='costPrice' onChange={handleChange} value={values.costPrice} />
         </div>
         <div className='form'>
-          <p className='label'>TOTAL UNITS (&#x20A6;)</p>
+          <p className='label'>TOTAL UNITS (₦)</p>
           <input type="text" name='totalUnits' onChange={handleChange} value={values.totalUnits} />
         </div>
         <div className='form'>
